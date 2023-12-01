@@ -120,7 +120,7 @@ require_once "function.php";
         }
 
         if($result[$idPiloto]["voltaMaisRapida"]>0 && $result[$idPiloto]["voltaMaisRapida"]>$tempoDaVolta){
-          $result[$idPiloto]["voltaMaisrapida"]=$tempoDaVolta;
+          $result[$idPiloto]["voltaMaisRapida"]=$tempoDaVolta;
         }
 
         else{
@@ -208,7 +208,7 @@ $pilotosQueNaoTerminaram = "";
 
   if($r["numVoltas"] < 4) {
     $pilotosQueNaoTerminaram .= $r['nome'] . "(cod: " . $vetor . ");";
-    
+
 } else {
  
     $i++;
@@ -236,6 +236,6 @@ if($acao == 1) {
       </body>
 </html
 
-
+?>
 
 
